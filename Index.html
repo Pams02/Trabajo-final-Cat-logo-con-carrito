@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Catálogo</title>
+    <style>
+        .card{
+            width: 18rem;
+            height: 26rem;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: skyblue">
+        <div class="container-fluid">
+          <a class="navbar-brand">Pams Store</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav col-10">
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-shopping-cart"></i> <span id="contador" class="badge" style="background-color: red; border-radius: 100%;">0</span>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 text-center" style="margin: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <h1>CATÁLOGO DE PRODUCTOS</h1>
+            </div>
+            <div class="col col-12 text-center">
+                <h5>Electrodomésticos</h5>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container mt-4 container-custom">
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" style="margin: 1.5em;">
+          <div class="col col-8 col-sm-8 col-md-6 col-lg-4">
+            <div class="card text-center text-bg-light mb-3">
+                <img src="https://www.lg.com/content/dam/channel/wcms/pe/images/refrigeradoras/gt37sgp_apzglpr_espr_pe_c/gallery/DZ1.jpg"; width="275em" class="card-img-top img-fluid" alt=”Refrigeradora”>
+                <div class=”card-body”>
+                    <h6 class="card-subtitle mb-2 text-muted text-center">CODIGO GT37SGP</h6>
+                    <h5 class="card-title text-center">Refrigeradora Top Freezer 374 Litros</h5>
+                    <h6 class="card-subtitle mb-2 text-muted text-center"><del>S/ 2,500.00</del></h6>
+                    <p class="card-text text-center">S/ 2,299.00</p>
+                    <a href="Detalle.html" class="btn bg-primary-subtle" onclick="href">Ver detalle</a>
+                    <a href="#" class="btn btn-primary btn-block" onclick="agregarCarrito()">Agregar a carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-8 col-sm-8 col-md-6 col-lg-4">
+            <div class="card text-center text-bg-light mb-3">
+                <img src="https://images.philips.com/is/image/philipsconsumer/48529870a9be415d8eeeafb7009e7b8d?$jpglarge$&wid=960"; width="250em" class="card-img-top img-fluid" alt=”Televisor”>
+                <div class=”card-body”>
+                    <h6 class="card-subtitle mb-2 text-muted text-center">CODIGO 43PFD6917/44</h6>
+                    <h5 class="card-title text-center">Android TV Full HD 6900 series</h5>
+                    <h6 class="card-subtitle mb-2 text-muted text-center"><del>S/ 2,300.00</del></h6>
+                    <p class="card-text text-center">S/ 1,999.00</p>
+                    <a href="#" class="btn bg-primary-subtle">Ver detalle</a>
+                    <a href="#" class="btn btn-primary btn-block" onclick="agregarCarrito()">Agregar a carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-8 col-sm-8 col-md-6 col-lg-4">
+            <div class="card text-center text-bg-light mb-3">
+                <img src="https://hiraoka.com.pe/media/catalog/product/1/1/118433_hmm-25n_vista_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"; width="230em" class="card-img-top img-fluid" alt=”Microondas”>
+                <div class=”card-body”>
+                    <h6 class="card-subtitle mb-2 text-muted text-center">CODIGO 118433</h6>
+                    <h5 class="card-title text-center">Horno Microondas Miray HMM-25N 25 L</h5>
+                    <h6 class="card-subtitle mb-2 text-muted text-center"><del>S/ 350.00</del></h6>
+                    <p class="card-text text-center">S/ 279.00</p>
+                    <a href="#" class="btn bg-primary-subtle">Ver detalle</a>
+                    <a href="#" class="btn btn-primary btn-block" onclick="agregarCarrito()">Agregar a carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       let contador = 0;
+       function agregarCarrito(){
+        contador++;
+        actualizarContador();
+       }
+       function actualizarContador() {
+        const contadorElement = document.getElementById('contador');
+        contadorElement.textContent = contador;
+       }
+    </script>
+</body>
+</html>
