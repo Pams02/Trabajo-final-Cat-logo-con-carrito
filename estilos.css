@@ -1,0 +1,44 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: skyblue;
+}
+.container-custom {
+    margin-top: 20px;
+}
+#carrito {
+    background-color: #bbbbbb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+    z-index: 1000;
+}
+#carrito h3 {
+    margin-top: 0;
+}
+#cont-cart {
+    list-style-type: none;
+    padding: 0;
+}
+#cont-cart li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+#cont-cart li:last-child {
+    border-bottom: none;
+}
+.btn {
+    display: block;
+    width: 100%;
+}
+.badge {
+    border-radius: 50%;
+}

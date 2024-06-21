@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: skyblue">
+        <div class="container-fluid">
+          <a class="navbar-brand">Pams Store</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="CatalogoProducto.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav col-10">
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-shopping-cart"></i> <span id="contador" class="badge" style="background-color: red; border-radius: 100%;">0</span>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 text-center" style="margin: 1em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <h1>CATÁLOGO DE PRODUCTOS</h1>
+            </div>
+            <div class="col col-12 text-center">
+                <h5>Electrodomésticos</h5>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container mt-4 container-custom">
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <!-- Productos -->
+        </div>
+    </div>
+    <div id="carrito" class="col-lg-3 col-md-4 col-sm-6 bg-secondary mt-2 mb-2 fixed-right">
+        <h3 class="text-white">Carrito de Compras</h3>
+        <ul id="cont-cart" class="list-group"></ul>
+        <!-- Productos -->
+        <p class="text-white">TOTAL: <span id="total-cart">S/ 0.00</span></p>
+        <button class="btn btn-primary">PAGAR</button>
+    </div>
+    
+</div>
+<script src="Productos.js"></script>
+</body>
+</html>
